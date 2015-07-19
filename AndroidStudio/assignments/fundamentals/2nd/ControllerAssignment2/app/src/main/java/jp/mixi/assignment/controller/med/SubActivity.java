@@ -14,6 +14,9 @@ import android.widget.TextView;
  * @author keishin.yokomaku
  */
 public class SubActivity extends Activity implements TextWatcher {
+
+    private EditText text;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // Hint: 状態遷移が何も起こっていない場合は、savedInstanceState は null です
@@ -42,12 +45,13 @@ public class SubActivity extends Activity implements TextWatcher {
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
+        outState.putString("text", text.getText().toString());
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        EditText text = (EditText) findViewById(R.id.Editor);
+        text = (EditText) findViewById(R.id.Editor);
         text.removeTextChangedListener(this);
     }
 

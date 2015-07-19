@@ -1,16 +1,20 @@
 
 package jp.mixi.practice.fragment.beg;
 
+import android.net.Uri;
 import android.os.Bundle;
-import android.app.Activity;
+import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
 
-public class MainActivity extends Activity {
+public class MainActivity extends FragmentActivity implements BlankFragment.OnFragmentInteractionListener, BlankFragment2.OnFragmentInteractionListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+//        FragmentManager fragmentManager = getSupportFragmentManager();
+//        fragmentManager.beginTransaction().replace(R.id.MyFragment, BlankFragment2.newInstance("", "")).commit();
     }
 
     @Override
@@ -20,4 +24,8 @@ public class MainActivity extends Activity {
         return true;
     }
 
+
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+    }
 }

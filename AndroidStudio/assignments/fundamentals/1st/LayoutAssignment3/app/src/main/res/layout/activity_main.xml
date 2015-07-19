@@ -1,10 +1,21 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity">
     <!-- TODO: 左側から順に、下記の View を配置していき、そのまとまりを画面上部に揃える -->
     <!-- 1. プロフィール画像(ic_launcher)と、それを囲う四角形の枠、その下に プロフィール と書かれた文字 -->
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+      <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/ic_launcher"
+              />
+
+    </FrameLayout>
     <!-- 2. 1. の右側の上半分に、ニックネームの表示と、そのさらに右端に設定アイコン -->
     <!-- 3. 1. の右側の下半分に、電話ボタン、メール送信ボタン、共有ボタンの 3 つを均等割付 -->
     <!-- 4. 2. と 3. の間に分割線 -->
