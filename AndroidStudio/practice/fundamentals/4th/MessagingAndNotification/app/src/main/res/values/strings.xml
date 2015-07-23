@@ -16,5 +16,7 @@
     <string name="action_call_3">Call Action 3</string>
 
     <string name="notification">Notification Practice</string>
+	<string name="title_activity_new_activity1">NewActivity1</string>
+	<string name="title_activity_new_activity2">NewActivity2</string>
 
 </resources>

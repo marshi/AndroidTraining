@@ -12,4 +12,5 @@
     <string name="name_hint">Input your name here.</string>
     <string name="confirm_button">Show Toast</string>
     <string name="toast_message">%1$s は、%2$d 回ボタンを押しました</string>
+    <string name="aiueo">あいうえお</string>
 </resources>
