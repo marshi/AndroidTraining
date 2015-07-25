@@ -17,5 +17,6 @@
 
     <string name="notification_2">Notification Assignment2</string>
     <string name="sub_activity">Sub activity #%1$d</string>
+	<string name="title_activity_text">TextActivity</string>
 
 </resources>

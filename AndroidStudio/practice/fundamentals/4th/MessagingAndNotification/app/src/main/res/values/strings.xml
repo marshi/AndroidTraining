@@ -18,5 +18,7 @@
     <string name="notification">Notification Practice</string>
 	<string name="title_activity_new_activity1">NewActivity1</string>
 	<string name="title_activity_new_activity2">NewActivity2</string>
+	<string name="title_activity_new_activity3">NewActivity3</string>
+	<string name="title_activity_noti">NotiActivity</string>
 
 </resources>

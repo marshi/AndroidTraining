@@ -27,6 +27,7 @@ public class NotificationActivity extends Activity {
                 .setSmallIcon(R.drawable.ic_launcher)
                 .setContentTitle("通知テスト")
                 .setContentText("通知の詳細テスト")
+                .set
                 .setContentIntent(pendingIntent) // 通知をタップした時に使う PendingIntent
                 .setOnlyAlertOnce(true) // この通知が未だ表示されていない時だけ、音やバイブレーション、ショートメッセージの表示を行う
                 .setAutoCancel(true) // タップしたら消えるようにする

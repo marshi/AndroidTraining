@@ -41,7 +41,9 @@ public class IntentActivity1 extends Activity {
             public void onClick(View v) {
                 // TODO ここに、NewActivity3 を呼び出す処理を書く
                 // TODO Intent に、Intent.FLAG_ACTIVITY_NO_HISTORY という flag をセットするとどうなるかレポートすること
-
+                Intent intent = new Intent(IntentActivity1.this, NewActivity3.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+                startActivity(intent);
             }
         });
     }

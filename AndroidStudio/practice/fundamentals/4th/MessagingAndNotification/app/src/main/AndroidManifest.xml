@@ -33,6 +33,24 @@
             android:name=".NewActivity2"
             android:label="@string/title_activity_new_activity2" >
         </activity>
+        <activity
+            android:name=".NewActivity3"
+            android:label="@string/title_activity_new_activity3" >
+        </activity>
+
+        <receiver
+            android:name=".Receiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="jp.mixi.practice.messagingandnotification.intent.action.FIRST" />
+                <action android:name="jp.mixi.practice.messagingandnotification.intent.action.SECOND" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".NotiActivity"
+            android:label="@string/title_activity_noti" >
+        </activity>
     </application>
 
 </manifest>
