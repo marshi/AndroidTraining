@@ -10,4 +10,6 @@
     <string name="unbind_service">Unbind</string>
     <string name="intent_service">Intent Service Control</string>
     <string name="start_intent_service">Call IntentService</string>
+    <string name="preference_intent_service">Call PreferenceIntentService</string>
+    <string name="loader_button">Loader</string>
 </resources>

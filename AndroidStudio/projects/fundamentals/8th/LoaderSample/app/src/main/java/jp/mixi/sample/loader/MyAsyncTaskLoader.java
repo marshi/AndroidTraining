@@ -24,26 +24,26 @@ public class MyAsyncTaskLoader extends AsyncTaskLoader<String> {
         return "hogehoge";
     }
 
-    @Override
-    public void deliverResult(String data) {
-        Log.v(TAG, "deliverResult");
+//    @Override
+//    public void deliverResult(String data) {
+//        Log.v(TAG, "deliverResult");
         // ローダがリセットされ、そのローダのライフサイクルが終了となる場合
-        if (isReset()) {
-            // キャッシュデータがある場合は、キャッシュを削除して、メモリから破棄可能にする
-            if (mCachedData != null) {
-                mCachedData = null;
-            }
-            return;
-        }
-
+//        if (isReset()) {
+//             キャッシュデータがある場合は、キャッシュを削除して、メモリから破棄可能にする
+//            if (mCachedData != null) {
+//                mCachedData = null;
+//            }
+//            return;
+//        }
+//
         // 得られたデータをキャッシュする
-        mCachedData = data;
+//        mCachedData = data;
 
         // ローダが開始されている場合、親にデータが得られたことを通知する
-        if (isStarted()) {
-            super.deliverResult(data);
-        }
-    }
+//        if (isStarted()) {
+//            super.deliverResult(data);
+//        }
+//    }
 
     @Override
     protected void onStartLoading() {

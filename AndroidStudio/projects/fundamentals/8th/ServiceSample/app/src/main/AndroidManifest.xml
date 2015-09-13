@@ -5,8 +5,16 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="7"
+        android:minSdkVersion="11"
         android:targetSdkVersion="17" />
+
+    <android:uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
 
     <application
         android:allowBackup="true"
@@ -14,7 +22,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="jp.mixi.sample.service.MainActivity"
+            android:name=".MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,12 +30,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service android:name=".BoundService" />
+        <service android:name=".MyIntentService" />
+        <service android:name=".StartedService" />
         <service
-            android:name="jp.mixi.sample.service.BoundService"/>
-        <service
-            android:name="jp.mixi.sample.service.MyIntentService"/>
-        <service
-            android:name="jp.mixi.sample.service.StartedService"/>
+            android:name=".PreferenceIntentService"
+            android:exported="false" >
+        </service>
     </application>
 
 </manifest>
